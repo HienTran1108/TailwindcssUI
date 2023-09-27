@@ -6,6 +6,9 @@ new LazyLoad({callback_error: (el: any) => (el.src = 'https://via.placeholder.co
 import {setupSwiper } from './swiper.ts';
 setupSwiper();
 
+import { swiperDetails } from './swiperDetails.ts';
+swiperDetails()
+
 import {setupMenuMobile } from './menu-mobile.ts';
 setupMenuMobile(document.getElementsByClassName('handle-menu'));
 
