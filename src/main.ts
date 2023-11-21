@@ -6,9 +6,21 @@ new LazyLoad({callback_error: (el: any) => (el.src = 'https://via.placeholder.co
 import {setupSwiper } from './swiper.ts';
 setupSwiper();
 import { setupSwiper2 } from './swiper2.ts';
-setupSwiper2('cate', 2, false, false, { slidePer_xl: 10, slidePer_lg: 6, slidePer_md: 4, slidePer_sm: 3 }, true);
-setupSwiper2('banner', 1, true, 3000, false, true);
-setupSwiper2('sale', 1, false, 1000, { slidePer_xl: 3, slidePer_lg: 3, slidePer_md: 2, slidePer_sm: 1 }, true);
+setupSwiper2('cate', 2, false, false, { slidePer_xl: 10, slidePer_lg: 6, slidePer_md: 4, slidePer_sm: 3 }, true, false, false, false);
+setupSwiper2('banner', 1, false, 3000, false, true, false, false, false);
+setupSwiper2('sale', 1, false, 1000, { slidePer_xl: 3, slidePer_lg: 3, slidePer_md: 2, slidePer_sm: 1 }, true, false, false, false);
+
+const swiperList = new Swiper (".mySwiper-list", {
+  loop: true,
+  spaceBetween: 19, 
+  slidesPerView: 4,
+  watchSlidesProgress: true,
+  freeMode: true,
+})
+
+setupSwiper2('main', 1,false, false, false, true, swiperList, true, true)
+
+
 
 
 //countdown
@@ -75,7 +87,15 @@ import {
   dropLng,
   dropPage,
   closeMenu,
-  openMenu
+  openMenu,
+  dropShow,
+  dropSort,
+  checkedInputRed,
+  checkedInputGreen,
+  checkedInputBlue,
+  checkedInputNew,
+  checkedInputRefur,
+  checkedInputUsed
 } from './togglemenu.ts'
 toggleDropDown(document.querySelector<HTMLButtonElement>('#menubtn')!)
 toggleDropList(document.querySelector<HTMLButtonElement>('#btnlist')!)
@@ -98,6 +118,14 @@ dropPage(document.querySelector<HTMLElement>('#pagebtn')!)
 closeMenu(document.querySelector<HTMLElement>('#closemenu')!)
 openMenu(document.querySelector<HTMLElement>('.openmenu')!)
 openMenu(document.querySelector<HTMLElement>('.openmenu2')!)
+dropShow(document.querySelector<HTMLElement>('#showbtn')!)
+dropSort(document.querySelector<HTMLElement>('#sortbtn')!)
+checkedInputRed(document.querySelector<HTMLInputElement>('#red')!)
+checkedInputGreen(document.querySelector<HTMLInputElement>('#green')!)
+checkedInputBlue(document.querySelector<HTMLInputElement>('#blue')!)
+checkedInputNew(document.querySelector<HTMLInputElement>('#new')!)
+checkedInputRefur(document.querySelector<HTMLInputElement>('#refur')!)
+checkedInputUsed(document.querySelector<HTMLInputElement>('#used')!)
 
 import { slideOutAnimation } from './animation.ts'
 slideOutAnimation(document.querySelector<HTMLElement>('#navxl')!)

@@ -8,13 +8,16 @@ export const setupSwiper2 = (
   paginate: boolean,
   autoDelay: number | false,
   brPoints: BreakPoints | false,
-  loopSlide: boolean
+  loopSlide: boolean,
+  thumbs: any | false,
+  watchSlidesProgress: boolean,
+  freeMode: boolean,
 ) => {
   const defaultSetting = {
     loop: loopSlide, //slidesPerView <= totalSlide/2
     // centeredSlides: true,
     autoHeight: false,
-    speed: 1200,
+    speed: 500,
     navigation: {
       nextEl: `.btn-next-${el}`,
       prevEl: `.btn-prev-${el}`,
@@ -23,8 +26,9 @@ export const setupSwiper2 = (
       init: (el: any) => animationSlide(el.slides[el.activeIndex], 0),
       slideChangeTransitionStart: (el: any) => animationSlide(el.slides[el.activeIndex], 0),
     },
+    
   };
-  new Swiper(`.mySwiper-${el}`, {
+  const swiperMain = new Swiper(`.mySwiper-${el}`, {
     ...defaultSetting,
     slidesPerView: slide,
     pagination: paginate && {
@@ -51,5 +55,9 @@ export const setupSwiper2 = (
         slidesPerView: brPoints.slidePer_sm,
       },
     },
+    thumbs: thumbs && {
+      swiper: thumbs
+    }
   });
+  return swiperMain;
 };

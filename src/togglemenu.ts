@@ -201,3 +201,100 @@ export const  toggleDropDown = (element : HTMLButtonElement) => {
       slidemenu?.classList.remove('-translate-x-full')
     })
   }
+
+  export const dropShow = (element : HTMLElement) => {
+    const showList = document.querySelector('#dropshow')
+    element.addEventListener('click', () => {
+      showList?.classList.toggle('hidden')
+    })
+  }
+
+  export const dropSort = (element : HTMLElement) => {
+    const showList = document.querySelector('#dropsort')
+    element.addEventListener('click', () => {
+      showList?.classList.toggle('hidden')
+    })
+  }
+
+  export const checkedInputRed = (element : HTMLInputElement) => {
+    const checkCoverRed = document.getElementById('redcover')
+    const checkedIconRed = document.getElementById('redchecked')
+   element.addEventListener('click', () => {
+    checkCoverRed?.classList.contains('bg-white') ? checkCoverRed?.classList?.replace('bg-white', 'bg-green-grn') : checkCoverRed?.classList?.replace('bg-green-grn', 'bg-white')
+    checkedIconRed?.classList?.contains('hidden') ? checkedIconRed?.classList?.remove('hidden') : checkedIconRed?.classList?.add('hidden')
+   })
+   checkCoverRed?.addEventListener('click', () => {
+    checkCoverRed?.classList.contains('bg-white') ? checkCoverRed?.classList?.replace('bg-white', 'bg-green-grn') : checkCoverRed?.classList?.replace('bg-green-grn', 'bg-white')
+    checkedIconRed?.classList?.contains('hidden') ? checkedIconRed?.classList?.remove('hidden') : checkedIconRed?.classList?.add('hidden')
+   })
+  }
+
+
+  export const checkedInputGreen = (element : HTMLInputElement) => {
+    const checkCoverGreen = document.getElementById('greencover')
+    const checkedIconGreen = document.getElementById('greenchecked')
+   element.addEventListener('click', () => {
+    checkCoverGreen?.classList.contains('bg-white') ? checkCoverGreen?.classList?.replace('bg-white', 'bg-green-grn') : checkCoverGreen?.classList?.replace('bg-green-grn', 'bg-white')
+    checkedIconGreen?.classList?.contains('hidden') ? checkedIconGreen?.classList?.remove('hidden') : checkedIconGreen?.classList?.add('hidden')
+   })
+   checkCoverGreen?.addEventListener('click', () => {
+    checkCoverGreen?.classList.contains('bg-white') ? checkCoverGreen?.classList?.replace('bg-white', 'bg-green-grn') : checkCoverGreen?.classList?.replace('bg-green-grn', 'bg-white')
+    checkedIconGreen?.classList?.contains('hidden') ? checkedIconGreen?.classList?.remove('hidden') : checkedIconGreen?.classList?.add('hidden')
+   })
+  }
+
+  export const checkedInputBlue = (element : HTMLInputElement) => {
+    const checkCoverBlue = document.getElementById('bluecover')
+    const checkedIconBlue = document.getElementById('bluechecked')
+   element.addEventListener('click', () => {
+    checkCoverBlue?.classList.contains('bg-white') ? checkCoverBlue?.classList?.replace('bg-white', 'bg-green-grn') : checkCoverBlue?.classList?.replace('bg-green-grn', 'bg-white')
+    checkedIconBlue?.classList?.contains('hidden') ? checkedIconBlue?.classList?.remove('hidden') : checkedIconBlue?.classList?.add('hidden')
+   })
+   checkCoverBlue?.addEventListener('click', () => {
+    checkCoverBlue?.classList.contains('bg-white') ? checkCoverBlue?.classList?.replace('bg-white', 'bg-green-grn') : checkCoverBlue?.classList?.replace('bg-green-grn', 'bg-white')
+    checkedIconBlue?.classList?.contains('hidden') ? checkedIconBlue?.classList?.remove('hidden') : checkedIconBlue?.classList?.add('hidden')
+   })
+  }
+
+  export const checkedInputNew = (element : HTMLInputElement) => {
+    const checkCoverNew = document.getElementById('newcover')
+    const checkedIconNew = document.getElementById('newchecked')
+   element.addEventListener('click', () => {
+    checkCoverNew?.classList.contains('bg-white') ? checkCoverNew?.classList?.replace('bg-white', 'bg-green-grn') : checkCoverNew?.classList?.replace('bg-green-grn', 'bg-white')
+    checkedIconNew?.classList?.contains('hidden') ? checkedIconNew?.classList?.remove('hidden') : checkedIconNew?.classList?.add('hidden')
+   })
+   checkCoverNew?.addEventListener('click', () => {
+    checkCoverNew?.classList.contains('bg-white') ? checkCoverNew?.classList?.replace('bg-white', 'bg-green-grn') : checkCoverNew?.classList?.replace('bg-green-grn', 'bg-white')
+    checkedIconNew?.classList?.contains('hidden') ? checkedIconNew?.classList?.remove('hidden') : checkedIconNew?.classList?.add('hidden')
+   })
+  }
+
+
+  export const checkedInputRefur = (element : HTMLInputElement) => {
+    const checkCoverRefur = document.getElementById('refurcover')
+    const checkedIconRefur = document.getElementById('refurchecked')
+   element.addEventListener('click', () => {
+    checkCoverRefur?.classList.contains('bg-white') ? checkCoverRefur?.classList?.replace('bg-white', 'bg-green-grn') : checkCoverRefur?.classList?.replace('bg-green-grn', 'bg-white')
+    checkedIconRefur?.classList?.contains('hidden') ? checkedIconRefur?.classList?.remove('hidden') : checkedIconRefur?.classList?.add('hidden')
+   })
+   checkCoverRefur?.addEventListener('click', () => {
+    checkCoverRefur?.classList.contains('bg-white') ? checkCoverRefur?.classList?.replace('bg-white', 'bg-green-grn') : checkCoverRefur?.classList?.replace('bg-green-grn', 'bg-white')
+    checkedIconRefur?.classList?.contains('hidden') ? checkedIconRefur?.classList?.remove('hidden') : checkedIconRefur?.classList?.add('hidden')
+   })
+  }
+
+
+  export const checkedInputUsed = (element : HTMLInputElement) => {
+    const checkCoverUsed = document.getElementById('usedcover')
+    const checkedIconUsed = document.getElementById('usedchecked')
+   element.addEventListener('click', () => {
+    checkCoverUsed?.classList.contains('bg-white') ? checkCoverUsed?.classList?.replace('bg-white', 'bg-green-grn') : checkCoverUsed?.classList?.replace('bg-green-grn', 'bg-white')
+    checkedIconUsed?.classList?.contains('hidden') ? checkedIconUsed?.classList?.remove('hidden') : checkedIconUsed?.classList?.add('hidden')
+   })
+   checkCoverUsed?.addEventListener('click', () => {
+    checkCoverUsed?.classList.contains('bg-white') ? checkCoverUsed?.classList?.replace('bg-white', 'bg-green-grn') : checkCoverUsed?.classList?.replace('bg-green-grn', 'bg-white')
+    checkedIconUsed?.classList?.contains('hidden') ? checkedIconUsed?.classList?.remove('hidden') : checkedIconUsed?.classList?.add('hidden')
+   })
+  }
+
+  

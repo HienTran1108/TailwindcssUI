@@ -50,8 +50,11 @@ module.exports = {
         'grey': '#808080',
         "7e": "#7E7E7E",
         "ad": "#adadad",
+        "f46": "#F4F6FA",
         "b6": "#B6B6B6",
         'blck' : '#253D4E',
+        "af":"#AFADAD",
+        "F234": "#F2F3F4"
       },
       zinc: {
         50: '#fafafa',
@@ -112,7 +115,8 @@ module.exports = {
         700: '#c2410c',
         800: '#9a3412',
         900: '#7c2d12',
-        'orn':'#FDC040'
+        'orn':'#FDC040',
+        'F5':'#F59758'
       },
       amber: {
         50: '#fffbeb',
@@ -166,6 +170,8 @@ module.exports = {
         'grntxt' : '#3BB7A3',
         'ligrn':'#BCE3C9',
         'darkgrn': '#81B13D',
+        'bggrn': '#9DDBC9',
+        'grnbtn': '#DEF9EC'
       },
       emerald: {
         50: '#ecfdf5',
@@ -226,6 +232,7 @@ module.exports = {
         700: '#1d4ed8',
         800: '#1e40af',
         900: '#1e3a8a',
+        '67':'#67BCEE'
       },
       indigo: {
         50: '#eef2ff',
@@ -287,6 +294,7 @@ module.exports = {
         800: '#9d174d',
         900: '#831843',
         'pnk': '#FD6E6E',
+        'f74': '#F74B81',
       },
       rose: {
         50: '#fff1f2',
@@ -328,6 +336,7 @@ module.exports = {
     },
     variants: {
       fill: ['hover', 'focus'], 
+      width: ["responsive", "hover", "focus"]
     },
   },
   plugins: [],

@@ -4,10 +4,10 @@ export const slideOutAnimation = (e: HTMLElement) => {
         const eGsap = item.querySelector('.gsapt')
         const drop = item.querySelector('.gsapd')
         eGsap?.addEventListener('mouseover', () => {
-            gsap.from(drop, {y: 10, opacity: 0, ease: 'power1.in', duration: 0.5})
+            gsap.from(drop, {y: 20, opacity:1, ease: 'power1.in', duration: 0.25})
         })   
         eGsap?.addEventListener('mouseout', () => {
-            gsap.from(drop,{y: 0, opacity: '+=1', ease: 'power1.in', duration: 0.5})
+            gsap.to(drop,{y: 0, opacity: '+=0.5', ease: 'power1.in', duration: 0.25})
         })   
     })
 }
